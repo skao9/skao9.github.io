@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Photo gallery featuring road trip adventures through the American Midwest, including Chicago and the Rockies.">
     <title>Midwest Gallery</title>
     <link rel="stylesheet" href="styles.css">
 </head>
@@ -29,48 +30,69 @@
     <main class="container">
         <section class="gallery-section">
             <h2>Midwest Explorations</h2>
+            <p style="text-align: center; max-width: 800px; margin: 0 auto 3rem;">
+                From the bustling city lights of Chicago to the stunning lakes and mountains of the Rocky Mountain states, the Midwest offers a captivating blend of nature and urban life.
+            </p>
             <div class="gallery-grid">
-                <!-- Insert your Midwest images and descriptions here -->
-                <div class="gallery-card">
-                    <img src="https://placehold.co/600x400/8c7e97/fff?text=Image+1" alt="Midwest Photo 1">
+                <!-- Video Slot (Replacing one placeholder) -->
+                <div class="gallery-card video-card">
+                    <video controls muted poster="cookoutposter.jpg">
+                        <source src="midwestphotos/cookout.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
                     <div class="gallery-content">
-                        <h3>Chicago</h3>
-                        <p>The skyline on a clear day.</p>
+                        <h3>Cookout Break</h3>
+                        <p>A quick clip of my friends cooking at Estes Park in Colorado.</p>
                     </div>
                 </div>
+                <!-- Photo 1: Chicago -->
                 <div class="gallery-card">
-                    <img src="https://placehold.co/600x400/8c7e97/fff?text=Image+2" alt="Midwest Photo 2">
+                    <a href="midwestphotos/chicago.JPG" target="_blank">
+                        <img src="midwestphotos/chicago.JPG" alt="Nighttime photo of the Chicago skyline reflecting in the water.">
+                    </a>
                     <div class="gallery-content">
-                        <h3>Rural Nebraska</h3>
-                        <p>Endless fields and open skies.</p>
+                        <h3>Chicago Nights</h3>
+                        <p>The luminous skyline reflecting over Lake Michigan.</p>
                     </div>
                 </div>
+                <!-- Photo 2: Coors Stadium -->
                 <div class="gallery-card">
-                    <img src="https://placehold.co/600x400/8c7e97/fff?text=Image+3" alt="Midwest Photo 3">
+                    <a href="midwestphotos/coorsstadium.jpg" target="_blank">
+                        <img src="midwestphotos/coorsstadium.jpg" alt="Two people on scooters in front of Coors Field in Denver, Colorado.">
+                    </a>
                     <div class="gallery-content">
-                        <h3>Lake Michigan</h3>
-                        <p>Calm waters and a serene coast.</p>
+                        <h3>Denver Stadium</h3>
+                        <p>A fun stop outside Coors Field, home of the Rockies.</p>
                     </div>
                 </div>
+                <!-- Photo 3: Ferris Wheel -->
                 <div class="gallery-card">
-                    <img src="https://placehold.co/600x400/8c7e97/fff?text=Image+4" alt="Midwest Photo 4">
+                    <a href="midwestphotos/ferris.JPG" target="_blank">
+                        <img src="midwestphotos/ferris.JPG" alt="A person taking a photo near a Ferris wheel and the Chicago skyline at sunset.">
+                    </a>
                     <div class="gallery-content">
-                        <h3>Minneapolis</h3>
-                        <p>Urban landscapes and parks.</p>
+                        <h3>Navy Pier</h3>
+                        <p>Capturing the Ferris wheel against the sunset glow.</p>
                     </div>
                 </div>
+                <!-- Photo 4: Park -->
                 <div class="gallery-card">
-                    <img src="https://placehold.co/600x400/8c7e97/fff?text=Image+5" alt="Midwest Photo 5">
+                    <a href="midwestphotos/park.jpg" target="_blank">
+                        <img src="midwestphotos/park.jpg" alt="Grant Park entrance with the Chicago skyline in the background.">
+                    </a>
                     <div class="gallery-content">
-                        <h3>Ohio Farmlands</h3>
-                        <p>Harvest season scenery.</p>
+                        <h3>Grant Park Views</h3>
+                        <p>Green spaces meeting the city architecture of Chicago.</p>
                     </div>
                 </div>
+                <!-- Photo 5: Rocky Mountain -->
                 <div class="gallery-card">
-                    <img src="https://placehold.co/600x400/8c7e97/fff?text=Image+6" alt="Midwest Photo 6">
+                    <a href="midwestphotos/rockymountain.jpg" target="_blank">
+                        <img src="midwestphotos/rockymountain.jpg" alt="A clear blue lake surrounded by pine trees with rocky mountains in the background.">
+                    </a>
                     <div class="gallery-content">
-                        <h3>Gateway Arch</h3>
-                        <p>The iconic landmark in St. Louis.</p>
+                        <h3>Rocky Mountain Lake</h3>
+                        <p>Serene alpine lake surrounded by thick forests.</p>
                     </div>
                 </div>
             </div>
@@ -83,22 +105,26 @@
             <div class="footer-content">
                 <div>
                     <h3>Leave a message</h3>
-                    <form>
-                        <input type="text" placeholder="Name">
-                        <textarea placeholder="Message" rows="4"></textarea>
+                    <form action="#" method="POST">
+                        <input type="text" name="name" placeholder="Name" required>
+                        <textarea name="message" placeholder="Message" rows="4" required></textarea>
                         <button type="submit">Submit</button>
                     </form>
                 </div>
                 <div>
                     <h3>Subscribe to Our Newsletter</h3>
-                    <form>
-                        <input type="text" placeholder="Name">
-                        <input type="email" placeholder="Email Address">
+                    <form action="#" method="POST">
+                        <input type="text" name="subscriber_name" placeholder="Name" required>
+                        <input type="email" name="subscriber_email" placeholder="Email Address" required>
                         <button type="submit">Subscribe</button>
                     </form>
                 </div>
             </div>
-            <p class="copyright">&copy; 2025 Sattra's Roadtrip Gallery. All Rights Reserved.</p>
+            <p class="copyright">
+                &copy; 2025 Sattra's Roadtrip Gallery. All Rights Reserved. | 
+                <a href="mailto:contact@sattragallery.com" class="footer-link">Email Us</a> | 
+                <a href="https://www.asu.edu/" target="_blank" class="footer-link">External Link (ASU)</a>
+            </p>
         </div>
     </footer>
 

@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Photo and video gallery featuring road trip adventures along the West Coast of the United States.">
     <title>West Coast Gallery</title>
     <link rel="stylesheet" href="styles.css">
 </head>
@@ -28,49 +29,70 @@
     <!-- Main Content -->
     <main class="container">
         <section class="gallery-section">
-            <h2>West Coast Sunsets</h2>
+            <h2>West Coast Endeavors</h2>
+            <p style="text-align: center; max-width: 800px; margin: 0 auto 3rem;">
+                Experience the raw beauty of the Pacific coast, from the rugged cliffs of Oregon to the iconic landmarks of California.
+            </p>
             <div class="gallery-grid">
-                <!-- Insert your West Coast images and descriptions here -->
-                <div class="gallery-card">
-                    <img src="https://placehold.co/600x400/8b5cf6/fff?text=Image+1" alt="West Coast Photo 1">
+                <!-- Video 1 (Project Requirement) -->
+                <div class="gallery-card video-card">
+                    <video controls muted poster="planeposter.jpg">
+                        <source src="wc_photos/plane.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
                     <div class="gallery-content">
-                        <h3>California Coast</h3>
-                        <p>Beautiful views along Highway 1.</p>
+                        <h3>Portland Airport</h3>
+                        <p>A clip of a plane flying low, landing in PDX. </p>
                     </div>
                 </div>
+                <!-- Photo 1: Beach -->
                 <div class="gallery-card">
-                    <img src="https://placehold.co/600x400/8b5cf6/fff?text=Image+2" alt="West Coast Photo 2">
+                    <a href="wc_photos/beach.jpg" target="_blank">
+                        <img src="wc_photos/beach.jpg" alt="Couple standing on a sandy beach with large waves and forested hills in the background.">
+                    </a>
                     <div class="gallery-content">
-                        <h3>Seattle Skyline</h3>
-                        <p>Exploring the city.</p>
+                        <h3>Northern California Shore</h3>
+                        <p>Enjoying the cool ocean air and rugged coastline.</p>
                     </div>
                 </div>
+                <!-- Photo 2: Carmel by the Sea -->
                 <div class="gallery-card">
-                    <img src="https://placehold.co/600x400/8b5cf6/fff?text=Image+3" alt="West Coast Photo 3">
+                    <a href="wc_photos/carmelbythesea.JPG" target="_blank">
+                        <img src="wc_photos/carmelbythesea.JPG" alt="Waves crashing against rocky cliffs near Carmel-by-the-Sea.">
+                    </a>
                     <div class="gallery-content">
-                        <h3>Grand Canyon</h3>
-                        <p>Sunrise over the canyon's edge.</p>
+                        <h3>Big Sur Coast</h3>
+                        <p>Dramatic views of waves and cliffs on Highway 1.</p>
                     </div>
                 </div>
+                <!-- Photo 3: Hollywood -->
                 <div class="gallery-card">
-                    <img src="https://placehold.co/600x400/8b5cf6/fff?text=Image+4" alt="West Coast Photo 4">
+                    <a href="wc_photos/hollywood.JPG" target="_blank">
+                        <img src="wc_photos/hollywood.JPG" alt="Two people posing next to a neon 'Welcome to Hollywood' sign surrounded by greenery.">
+                    </a>
                     <div class="gallery-content">
-                        <h3>Golden Gate Bridge</h3>
-                        <p>An iconic San Francisco landmark.</p>
+                        <h3>Welcome to Hollywood</h3>
+                        <p>A fun stop to celebrate the start of the trip.</p>
                     </div>
                 </div>
+                <!-- Photo 4: Oregon -->
                 <div class="gallery-card">
-                    <img src="https://placehold.co/600x400/8b5cf6/fff?text=Image+5" alt="West Coast Photo 5">
+                    <a href="wc_photos/oregon.JPG" target="_blank">
+                        <img src="wc_photos/oregon.JPG" alt="View from a highway overlooking a wide, arid canyon valley in Oregon.">
+                    </a>
                     <div class="gallery-content">
-                        <h3>Redwood Forest</h3>
-                        <p>Hiking among the giant trees.</p>
+                        <h3>Oregon Roadways</h3>
+                        <p>Driving through the vast, open plains of the Pacific Northwest.</p>
                     </div>
                 </div>
+                <!-- Photo 5: San Francisco -->
                 <div class="gallery-card">
-                    <img src="https://placehold.co/600x400/8b5cf6/fff?text=Image+6" alt="West Coast Photo 6">
+                    <a href="wc_photos/sanfrancisco.JPG" target="_blank">
+                        <img src="wc_photos/sanfrancisco.JPG" alt="A person hiking on a rocky hillside overlooking the city of San Francisco on a foggy day.">
+                    </a>
                     <div class="gallery-content">
-                        <h3>Mount Rainier</h3>
-                        <p>Snow-capped peaks and wildflowers.</p>
+                        <h3>Foggy San Francisco</h3>
+                        <p>Hiking above the city on a classic cloudy morning.</p>
                     </div>
                 </div>
             </div>
@@ -83,22 +105,26 @@
             <div class="footer-content">
                 <div>
                     <h3>Leave a message</h3>
-                    <form>
-                        <input type="text" placeholder="Name">
-                        <textarea placeholder="Message" rows="4"></textarea>
+                    <form action="#" method="POST">
+                        <input type="text" name="name" placeholder="Name" required>
+                        <textarea name="message" placeholder="Message" rows="4" required></textarea>
                         <button type="submit">Submit</button>
                     </form>
                 </div>
                 <div>
                     <h3>Subscribe to Our Newsletter</h3>
-                    <form>
-                        <input type="text" placeholder="Name">
-                        <input type="email" placeholder="Email Address">
+                    <form action="#" method="POST">
+                        <input type="text" name="subscriber_name" placeholder="Name" required>
+                        <input type="email" name="subscriber_email" placeholder="Email Address" required>
                         <button type="submit">Subscribe</button>
                     </form>
                 </div>
             </div>
-            <p class="copyright">&copy; 2025 Sattra's Roadtrip Gallery. All Rights Reserved.</p>
+            <p class="copyright">
+                &copy; 2025 Sattra's Roadtrip Gallery. All Rights Reserved. | 
+                <a href="mailto:contact@sattragallery.com" class="footer-link">Email Us</a> | 
+                <a href="https://www.asu.edu/" target="_blank" class="footer-link">External Link (ASU)</a>
+            </p>
         </div>
     </footer>
 

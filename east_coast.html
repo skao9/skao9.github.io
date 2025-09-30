@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Photo gallery featuring road trip adventures across the East Coast of the United States.">
     <title>East Coast Gallery</title>
     <link rel="stylesheet" href="styles.css">
 </head>
@@ -29,48 +30,69 @@
     <main class="container">
         <section class="gallery-section">
             <h2>East Coast Adventures</h2>
+            <p style="text-align: center; max-width: 800px; margin: 0 auto 3rem;">
+                From the historic cities of the Northeast to the sunny and rainy beaches along the East Coast, this gallery captures the diverse landscapes and unique charm of the Atlantic coast.
+            </p>
             <div class="gallery-grid">
-                <!-- Insert your East Coast images and descriptions here -->
+                <!-- Photo 1: BAPS Temple -->
                 <div class="gallery-card">
-                    <img src="https://placehold.co/600x400/3b82f6/fff?text=Image+1" alt="East Coast Photo 1">
+                    <a href="ec_photos/BAPSTemple.JPG" target="_blank">
+                        <img src="ec_photos/BAPSTemple.JPG" alt="BAPS Temple complex on a sunny day with reflective pool.">
+                    </a>
                     <div class="gallery-content">
-                        <h3>New York City</h3>
-                        <p>Exploring the bustling streets.</p>
+                        <h3>Robbinsville BAPS Temple</h3>
+                        <p>Incredible Hindu architecture found in the middle of New Jersey.</p>
                     </div>
                 </div>
+                <!-- Photo 2: Jersey Shore -->
                 <div class="gallery-card">
-                    <img src="https://placehold.co/600x400/3b82f6/fff?text=Image+2" alt="East Coast Photo 2">
+                    <a href="ec_photos/jerseyshore.JPG" target="_blank">
+                        <img src="ec_photos/jerseyshore.JPG" alt="Two people walking on the beach at sunset near the Jersey Shore boardwalk.">
+                    </a>
                     <div class="gallery-content">
-                        <h3>Boston Harbor</h3>
-                        <p>Sunset views over the water.</p>
+                        <h3>Jersey Shore Sunset</h3>
+                        <p>Warm colors reflecting off the sand and waves.</p>
                     </div>
                 </div>
+                <!-- Photo 3: Lighthouse -->
                 <div class="gallery-card">
-                    <img src="https://placehold.co/600x400/3b82f6/fff?text=Image+3" alt="East Coast Photo 3">
+                    <a href="ec_photos/lighthouse.jpg" target="_blank">
+                        <img src="ec_photos/lighthouse.jpg" alt="Person sitting near a picnic table next to a red and white striped lighthouse.">
+                    </a>
                     <div class="gallery-content">
-                        <h3>Florida Coastline</h3>
-                        <p>Beautiful beaches and clear water.</p>
+                        <h3>Coastal Maine</h3>
+                        <p>Iconic striped lighthouse in Lubec, ME overlooking the Atlantic.</p>
                     </div>
                 </div>
-                <div class="gallery-card">
-                    <img src="https://placehold.co/600x400/3b82f6/fff?text=Image+4" alt="East Coast Photo 4">
+                <!-- Video Slot (Replacing Photo 4) -->
+                <div class="gallery-card video-card">
+                   <video controls muted poster="mainemountainposter.jpg">
+                        <source src="ec_photos/mainemountain.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
                     <div class="gallery-content">
-                        <h3>Washington, D.C.</h3>
-                        <p>Sightseeing at the nation's capital.</p>
+                        <h3>Moose Mountain</h3>
+                        <p>A short clip of an overlook of Moose Mountain in Maine.</p>
                     </div>
                 </div>
+                <!-- Photo 5: Thurmond -->
                 <div class="gallery-card">
-                    <img src="https://placehold.co/600x400/3b82f6/fff?text=Image+5" alt="East Coast Photo 5">
+                    <a href="ec_photos/thurmond.JPG" target="_blank">
+                        <img src="ec_photos/thurmond.JPG" alt="Abandoned brick building next to train tracks in Thurmond, West Virginia.">
+                    </a>
                     <div class="gallery-content">
-                        <h3>Acadia National Park</h3>
-                        <p>Hiking the scenic trails of Maine.</p>
+                        <h3>Thurmond Ghost Town</h3>
+                        <p>Exploring the historic, abandoned railway town in West Virginia.</p>
                     </div>
                 </div>
+                <!-- Photo 6: Pagoda (Moved to Slot 6) -->
                 <div class="gallery-card">
-                    <img src="https://placehold.co/600x400/3b82f6/fff?text=Image+6" alt="East Coast Photo 6">
+                    <a href="ec_photos/pagoda.jpg" target="_blank">
+                        <img src="ec_photos/pagoda.jpg" alt="A red tiered pagoda lit up at night overlooking a distant city skyline.">
+                    </a>
                     <div class="gallery-content">
-                        <h3>Charleston, SC</h3>
-                        <p>Historic architecture and charm.</p>
+                        <h3>Reading, PA Pagoda</h3>
+                        <p>Night view shot from the Japanese-style architecture named "The Pagoda" in Reading, PA.</p>
                     </div>
                 </div>
             </div>
@@ -83,22 +105,26 @@
             <div class="footer-content">
                 <div>
                     <h3>Leave a message</h3>
-                    <form>
-                        <input type="text" placeholder="Name">
-                        <textarea placeholder="Message" rows="4"></textarea>
+                    <form action="#" method="POST">
+                        <input type="text" name="name" placeholder="Name" required>
+                        <textarea name="message" placeholder="Message" rows="4" required></textarea>
                         <button type="submit">Submit</button>
                     </form>
                 </div>
                 <div>
                     <h3>Subscribe to Our Newsletter</h3>
-                    <form>
-                        <input type="text" placeholder="Name">
-                        <input type="email" placeholder="Email Address">
+                    <form action="#" method="POST">
+                        <input type="text" name="subscriber_name" placeholder="Name" required>
+                        <input type="email" name="subscriber_email" placeholder="Email Address" required>
                         <button type="submit">Subscribe</button>
                     </form>
                 </div>
             </div>
-            <p class="copyright">&copy; 2025 Sattra's Roadtrip Gallery. All Rights Reserved.</p>
+            <p class="copyright">
+                &copy; 2025 Sattra's Roadtrip Gallery. All Rights Reserved. | 
+                <a href="mailto:contact@sattragallery.com" class="footer-link">Email Us</a> | 
+                <a href="https://www.asu.edu/" target="_blank" class="footer-link">External Link (ASU)</a>
+            </p>
         </div>
     </footer>
 

@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Photo gallery featuring road trip adventures through the American South, including Texas and the Smoky Mountains.">
     <title>South Gallery</title>
     <link rel="stylesheet" href="styles.css">
 </head>
@@ -29,48 +30,69 @@
     <main class="container">
         <section class="gallery-section">
             <h2>Southern Charm</h2>
+            <p style="text-align: center; max-width: 800px; margin: 0 auto 3rem;">
+                From the stunning sunrises on the Gulf Coast to the high-rise cities and winding Smoky Mountain roads, this gallery explores the diverse beauty of the South.
+            </p>
             <div class="gallery-grid">
-                <!-- Insert your South images and descriptions here -->
+                <!-- Photo 1: Birds on Beach -->
                 <div class="gallery-card">
-                    <img src="https://placehold.co/600x400/8b5cf6/fff?text=Image+1" alt="South Photo 1">
+                    <a href="southphotos/birds.JPG" target="_blank">
+                        <img src="southphotos/birds.JPG" alt="Three birds standing on a beach with a bright orange sunset over the ocean.">
+                    </a>
                     <div class="gallery-content">
-                        <h3>New Orleans</h3>
-                        <p>Exploring the historic French Quarter.</p>
+                        <h3>Gulf Coast Sunset</h3>
+                        <p>Tranquil moments on the Florida coastline.</p>
                     </div>
                 </div>
-                <div class="gallery-card">
-                    <img src="https://placehold.co/600x400/8b5cf6/fff?text=Image+2" alt="South Photo 2">
+                <!-- Video Slot (Replacing one placeholder) -->
+                <div class="gallery-card video-card">
+                    <video controls muted poster="beachvideoposter.jpg">
+                        <source src="southphotos/beachvideo.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
                     <div class="gallery-content">
-                        <h3>Georgia Mountains</h3>
-                        <p>Scenic views from the Blue Ridge.</p>
+                        <h3>Sunset Beach Views</h3>
+                        <p>Quick clip of my family along the Gulf Coast.</p>
                     </div>
                 </div>
+                <!-- Photo 2: Dallas Skyline -->
                 <div class="gallery-card">
-                    <img src="https://placehold.co/600x400/8b5cf6/fff?text=Image+3" alt="South Photo 3">
+                    <a href="southphotos/dallasskyline.JPG" target="_blank">
+                        <img src="southphotos/dallasskyline.JPG" alt="Dallas skyline view from a highway with modern skyscrapers at dusk.">
+                    </a>
                     <div class="gallery-content">
-                        <h3>Charleston</h3>
-                        <p>Beautiful architecture and gardens.</p>
+                        <h3>Dallas Freeway</h3>
+                        <p>Driving into the heart of the Lone Star State.</p>
                     </div>
                 </div>
+                <!-- Photo 3: Dragon Tail -->
                 <div class="gallery-card">
-                    <img src="https://placehold.co/600x400/8b5cf6/fff?text=Image+4" alt="South Photo 4">
+                    <a href="southphotos/dragontail.JPG" target="_blank">
+                        <img src="southphotos/dragontail.JPG" alt="Person standing in front of a road sign for the Tail of the Dragon in the Smoky Mountains.">
+                    </a>
                     <div class="gallery-content">
-                        <h3>Savannah</h3>
-                        <p>Strolling through the Spanish moss.</p>
+                        <h3>Tail of the Dragon</h3>
+                        <p>Winding roads through the stunning Appalachian landscape. Renowned for many racing and driving enthusiasts around the world. </p>
                     </div>
                 </div>
+                <!-- Photo 4: Smoky Mountain -->
                 <div class="gallery-card">
-                    <img src="https://placehold.co/600x400/8b5cf6/fff?text=Image+5" alt="South Photo 5">
+                    <a href="southphotos/smokymountain.JPG" target="_blank">
+                        <img src="southphotos/smokymountain.JPG" alt="A person stands on the side of a mountain road looking over misty, rolling hills.">
+                    </a>
                     <div class="gallery-content">
-                        <h3>Miami Beach</h3>
-                        <p>Colorful Art Deco buildings.</p>
+                        <h3>Smoky Mountain Views</h3>
+                        <p>Foggy morning views from a scenic overlook.</p>
                     </div>
                 </div>
+                <!-- Photo 5: Texas Eye -->
                 <div class="gallery-card">
-                    <img src="https://placehold.co/600x400/8b5cf6/fff?text=Image+6" alt="South Photo 6">
+                    <a href="southphotos/texaseye.JPG" target="_blank">
+                        <img src="southphotos/texaseye.JPG" alt="A large, surreal eyeball sculpture in a garden setting in downtown Dallas.">
+                    </a>
                     <div class="gallery-content">
-                        <h3>Nashville</h3>
-                        <p>Exploring the city's music scene.</p>
+                        <h3>The Giant Eyeball</h3>
+                        <p>An unexpected roadside attraction in Dallas.</p>
                     </div>
                 </div>
             </div>
@@ -83,22 +105,26 @@
             <div class="footer-content">
                 <div>
                     <h3>Leave a message</h3>
-                    <form>
-                        <input type="text" placeholder="Name">
-                        <textarea placeholder="Message" rows="4"></textarea>
+                    <form action="#" method="POST">
+                        <input type="text" name="name" placeholder="Name" required>
+                        <textarea name="message" placeholder="Message" rows="4" required></textarea>
                         <button type="submit">Submit</button>
                     </form>
                 </div>
                 <div>
                     <h3>Subscribe to Our Newsletter</h3>
-                    <form>
-                        <input type="text" placeholder="Name">
-                        <input type="email" placeholder="Email Address">
+                    <form action="#" method="POST">
+                        <input type="text" name="subscriber_name" placeholder="Name" required>
+                        <input type="email" name="subscriber_email" placeholder="Email Address" required>
                         <button type="submit">Subscribe</button>
                     </form>
                 </div>
             </div>
-            <p class="copyright">&copy; 2025 Sattra's Roadtrip Gallery. All Rights Reserved.</p>
+            <p class="copyright">
+                &copy; 2025 Sattra's Roadtrip Gallery. All Rights Reserved. | 
+                <a href="mailto:contact@sattragallery.com" class="footer-link">Email Us</a> | 
+                <a href="https://www.asu.edu/" target="_blank" class="footer-link">External Link (ASU)</a>
+            </p>
         </div>
     </footer>
 

@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Sattra's Roadtrip Gallery showcases photography and videos from road trip adventures across the US East Coast, Midwest, South, and West Coast.">
     <title>Sattra's Roadtrip Gallery</title>
     <link rel="stylesheet" href="styles.css">
 </head>
@@ -30,8 +31,8 @@
 
         <!-- Hero Section -->
         <section class="hero-section">
-            <!-- Insert your large hero image or video here -->
-            <img src="https://placehold.co/1200x600/60a5fa/fff?text=Large+Hero+Image" alt="Placeholder hero image">
+            <!-- IMPLEMENTED: Hero photo for the homepage -->
+            <img src="homepagephotos/herophoto.JPG" alt="Scenic road winding through green, forested hills on a sunny day.">
         </section>
 
         <!-- Featured Galleries Section -->
@@ -39,23 +40,23 @@
             <h2>Featured Photo Galleries</h2>
             <table class="gallery-table">
                 <tr>
-                    <!-- Gallery Card 1 -->
+                    <!-- Gallery Card 1: East Coast -->
                     <td>
                         <div class="gallery-card">
-                            <!-- Insert your gallery image here -->
-                            <img src="https://placehold.co/600x400/3b82f6/fff?text=East+Coast" alt="East Coast Adventures">
+                            <!-- IMPLEMENTED: East Coast photo for featured card -->
+                            <img src="homepagephotos/eastcoastphoto.JPG" alt="Skyscrapers shrouded in fog in a large city.">
                             <div class="gallery-content">
                                 <h3>East Coast Adventures</h3>
-                                <p>Spring 2023</p>
+                                <p>From Fall/Winter 2021-23</p>
                                 <a href="east_coast.html" class="view-link">View Gallery &rarr;</a>
                             </div>
                         </div>
                     </td>
-                    <!-- Gallery Card 2 -->
+                    <!-- Gallery Card 2: Midwest -->
                     <td>
                         <div class="gallery-card">
-                            <!-- Insert your gallery image here -->
-                            <img src="https://placehold.co/600x400/4f46e5/fff?text=Midwest" alt="Midwest Explorations">
+                            <!-- IMPLEMENTED: Midwest photo for featured card -->
+                            <img src="homepagephotos/midwestphoto.jpg" alt="Mountain valley landscape with pine trees, a small lake, and large clouds.">
                             <div class="gallery-content">
                                 <h3>Midwest Explorations</h3>
                                 <p>Summer 2023</p>
@@ -63,14 +64,14 @@
                             </div>
                         </div>
                     </td>
-                    <!-- Gallery Card 3 -->
+                    <!-- Gallery Card 3: West Coast -->
                     <td>
                         <div class="gallery-card">
-                            <!-- Insert your gallery image here -->
-                            <img src="https://placehold.co/600x400/ef4444/fff?text=West+Coast" alt="West Coast Sunsets">
+                            <!-- IMPLEMENTED: West Coast photo for featured card -->
+                            <img src="homepagephotos/westcoastphoto.JPG" alt="Gnarled cypress tree on a sandy beach with fog in the distance.">
                             <div class="gallery-content">
                                 <h3>West Coast Sunsets</h3>
-                                <p>Fall 2023</p>
+                                <p>Fall, Summer, Winter 2022-24</p>
                                 <a href="west_coast.html" class="view-link">View Gallery &rarr;</a>
                             </div>
                         </div>
@@ -88,9 +89,9 @@
                 <!-- Contact Form -->
                 <div>
                     <h3>Leave a message</h3>
-                    <form>
-                        <input type="text" placeholder="Name">
-                        <textarea placeholder="Message" rows="4"></textarea>
+                    <form action="#" method="POST">
+                        <input type="text" name="name" placeholder="Name" required>
+                        <textarea name="message" placeholder="Message" rows="4" required></textarea>
                         <button type="submit">Submit</button>
                     </form>
                 </div>
@@ -98,14 +99,18 @@
                 <!-- Newsletter Form -->
                 <div>
                     <h3>Subscribe to Our Newsletter</h3>
-                    <form>
-                        <input type="text" placeholder="Name">
-                        <input type="email" placeholder="Email Address">
+                    <form action="#" method="POST">
+                        <input type="text" name="subscriber_name" placeholder="Name" required>
+                        <input type="email" name="subscriber_email" placeholder="Email Address" required>
                         <button type="submit">Subscribe</button>
                     </form>
                 </div>
             </div>
-            <p class="copyright">&copy; 2025 Sattra's Roadtrip Gallery. All Rights Reserved.</p>
+            <p class="copyright">
+                &copy; 2025 Sattra's Roadtrip Gallery. All Rights Reserved. | 
+                <a href="mailto:contact@sattragallery.com" class="footer-link">Email Us</a> | 
+                <a href="https://www.asu.edu/" target="_blank" class="footer-link">External Link (ASU)</a>
+            </p>
         </div>
     </footer>
 

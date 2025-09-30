@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contact information and business hours for Sattra's Roadtrip Gallery.">
     <title>Contact Us</title>
     <link rel="stylesheet" href="styles.css">
 </head>
@@ -30,10 +31,10 @@
         <section class="contact-section">
             <h2>Contact Us</h2>
             <p style="text-align: center; margin-bottom: 1.5rem;">Have a question or just want to say hello? Send us a message!</p>
-            <form>
-                <input type="text" placeholder="Name">
-                <input type="email" placeholder="Email Address">
-                <textarea placeholder="Your Message" rows="6"></textarea>
+            <form action="#" method="POST">
+                <input type="text" name="name" placeholder="Name" required>
+                <input type="email" name="email" placeholder="Email Address" required>
+                <textarea name="message" placeholder="Your Message" rows="6" required></textarea>
                 <button type="submit">Send Message</button>
             </form>
 
@@ -44,16 +45,29 @@
                         <tr>
                             <th>Day</th>
                             <th>Hours</th>
+                            <!-- Added a third column header -->
+                            <th>Notes</th>
                         </tr>
                     </thead>
                     <tbody>
                         <tr>
                             <td>Weekdays</td>
                             <td>9 am - 9 pm</td>
+                            <!-- Added data for the third column -->
+                            <td>Live chat support available</td>
                         </tr>
                         <tr>
                             <td>Weekends</td>
                             <td>12 pm - 12 am</td>
+                            <!-- Added data for the third column -->
+                            <td>Photo submissions reviewed</td>
+                        </tr>
+                        <!-- Added a third row for compliance with project instructions (3 data rows minimum) -->
+                        <tr>
+                            <td>Holidays</td>
+                            <td>Varies</td>
+                            <!-- Added data for the third column -->
+                            <td>Check social media for updates</td>
                         </tr>
                     </tbody>
                 </table>
@@ -67,22 +81,26 @@
             <div class="footer-content">
                 <div>
                     <h3>Leave a message</h3>
-                    <form>
-                        <input type="text" placeholder="Name">
-                        <textarea placeholder="Message" rows="4"></textarea>
+                    <form action="#" method="POST">
+                        <input type="text" name="name" placeholder="Name" required>
+                        <textarea name="message" placeholder="Message" rows="4" required></textarea>
                         <button type="submit">Submit</button>
                     </form>
                 </div>
                 <div>
                     <h3>Subscribe to Our Newsletter</h3>
-                    <form>
-                        <input type="text" placeholder="Name">
-                        <input type="email" placeholder="Email Address">
+                    <form action="#" method="POST">
+                        <input type="text" name="subscriber_name" placeholder="Name" required>
+                        <input type="email" name="subscriber_email" placeholder="Email Address" required>
                         <button type="submit">Subscribe</button>
                     </form>
                 </div>
             </div>
-            <p class="copyright">&copy; 2025 Sattra's Roadtrip Gallery. All Rights Reserved.</p>
+            <p class="copyright">
+                &copy; 2025 Sattra's Roadtrip Gallery. All Rights Reserved. | 
+                <a href="mailto:contact@sattragallery.com" class="footer-link">Email Us</a> | 
+                <a href="https://www.asu.edu/" target="_blank" class="footer-link">External Link (ASU)</a>
+            </p>
         </div>
     </footer>
 
